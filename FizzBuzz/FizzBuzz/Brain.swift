@@ -15,8 +15,16 @@ class Brain {
         } else {
             return false
         }
-        
       }
+    
+    func isDivisibleByThreeAndFive(number: Int) -> Bool{
+      if number % 15 == 0 {
+          return true
+      } else {
+          return false
+      }
+    }
+    
 }
 
 //
