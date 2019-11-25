@@ -2,27 +2,23 @@ class Brain {
     
     
     func isDivisibleByThree(number: Int) -> Bool{
-        if number % 3 == 0 {
-            return true
-        } else {
-            return false
+       return isDivisibleby(divisor: 3, number: number)
         }
-    }
+    
     
     func isDivisibleByFive(number: Int) -> Bool{
-        if number % 5 == 0 {
-            return true
-        } else {
-            return false
+      return isDivisibleby(divisor: 5, number: number)
         }
-      }
+      
     
     func isDivisibleByThreeAndFive(number: Int) -> Bool{
-      if number % 15 == 0 {
-          return true
-      } else {
-          return false
+        return isDivisibleby(divisor: 15, number: number)
       }
+    
+    
+    
+    func isDivisibleby(divisor: Int, number: Int) -> Bool{
+        return number % divisor == 0
     }
     
 }
